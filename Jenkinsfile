@@ -3,7 +3,7 @@ node('built-in')
 {
    stage('ContionousDownload') 
        {
-               git branch: 'main', url: 'https://github.com/sumanthintime/Jenkins.git'
+               git branch: 'main', url: 'https://github.com/hemakumar1980/JenkinsPipeline.git'
 	           }
 		       stage('ContionousBuild') 
 		           {
@@ -15,7 +15,7 @@ node('built-in')
 						           }
 							        stage('ContionousTesting') 
 								    {
-								            git branch: 'main', url: 'https://github.com/sumanthintime/FunctionalTesting.git'
+								            git branch: 'main', url: 'https://github.com/hemakumar1980/FunctionalTesting.git'
 									    sh 'java -jar /home/ubuntu/.jenkins/workspace/ScriptedPipeline1/testing.jar'
 									        }
 										    stage('ContionousDelivery') 
