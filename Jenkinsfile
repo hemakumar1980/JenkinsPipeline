@@ -2,7 +2,7 @@ node('built-in')
 {
     
     
-    echo "Script execution on built in node"
+    echo "Script execution on built in node..."
     
     stage('ContinousDownload')
     {
