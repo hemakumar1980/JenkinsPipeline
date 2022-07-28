@@ -8,4 +8,12 @@ node('built-in')
     {
     git branch: 'main', url: 'https://github.com/hemakumar1980/FunctionalTesting.git'
     }
+    
+    stage('ContinuosBuild')
+       {
+          steps
+          {
+             sh 'mvn package'
+          }
+       }
 }
