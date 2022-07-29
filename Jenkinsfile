@@ -13,9 +13,9 @@ node ('built-in')
           }
       stage('ContinuosDeploy')
        {
-         echo "Starting Continous Building"
+         echo "Starting Continous Deploy"
            
-          sh 'mvn package'
+        deploy adapters: [tomcat9(credentialsId: 'a6359bf9-6e48-4fcb-829b-1b4e9d28ce4a', path: '', url: 'http://172.31.11.197:8080/')], contextPath: 'testapp', war: '** / *.war'
           }
        
 }
