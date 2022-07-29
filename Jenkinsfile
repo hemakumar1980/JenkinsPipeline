@@ -21,7 +21,7 @@ node ('built-in')
        {
          echo "Starting Continous Testing"
            git branch: 'main', url: 'https://github.com/hemakumar1980/FunctionalTesting.git'
-           sh 'java -jar /home/ubuntu/.jenkins/workspace/ScriptedPipeLine1/testing.war'
+           sh 'java -jar /home/ubuntu/.jenkins/workspace/ScriptedPipeLine1/testing.jar'
         //deploy adapters: [tomcat9(credentialsId: 'a6359bf9-6e48-4fcb-829b-1b4e9d28ce4a', path: '', url: 'http://172.31.11.197:8080/')], contextPath: 'testapp', war: '**/*.war'
           }
        
