@@ -11,6 +11,11 @@ node ('built-in')
            
           sh 'mvn package'
           }
-     
+      stage('ContinuosDeploy')
+       {
+         echo "Starting Continous Building"
+           
+          sh 'mvn package'
+          }
        
 }
